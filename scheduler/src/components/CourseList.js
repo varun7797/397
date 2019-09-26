@@ -1,6 +1,6 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState} from 'react';
 import "rbx/index.css";
-import { Button, Container, Message, Title } from "rbx";
+import { Button } from "rbx";
 import Course from './Courses/Course.js'
 import {terms, getCourseTerm} from './Courses/times.js'
 import {buttonColor} from './Courses/Course.js'

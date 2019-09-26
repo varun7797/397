@@ -6,11 +6,9 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import {timeParts, terms, days, meetsPat, getCourseTerm, getCourseNumber, daysOverlap, hoursOverlap, timeConflict, courseConflict, hasConflict} from './components/Courses/times.js'
-import Course from './components/Courses/Course.js'
+import {timeParts} from './components/Courses/times.js'
 import {db} from './components/Courses/index.js'
 import CourseList from './components/CourseList.js'
-import {buttonColor} from './components/Courses/Course.js'
 
 // AUTH UI
 const uiConfig = {
@@ -47,10 +45,6 @@ const Banner = ({ user, title }) => (
     <Title>{ title || '[loading...]' }</Title>
   </React.Fragment>
 );
-
-
-
-
 
 const addCourseTimes = course => ({
   ...course,

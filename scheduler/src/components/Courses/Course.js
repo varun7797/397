@@ -1,7 +1,7 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import "rbx/index.css";
-import { Button, Container, Message, Title } from "rbx";
-import {timeParts, terms, days, meetsPat, getCourseTerm, getCourseNumber, daysOverlap, hoursOverlap, timeConflict, courseConflict, hasConflict} from './times.js'
+import { Button} from "rbx";
+import {timeParts, getCourseTerm, getCourseNumber, hasConflict} from './times.js'
 import {db} from './index.js'
 
 export const buttonColor = selected => (

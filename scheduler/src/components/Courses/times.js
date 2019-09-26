@@ -1,4 +1,3 @@
-import React, { useState, useEffect} from 'react';
 
 export const terms = { F: 'Fall', W: 'Winter', S: 'Spring'};
 export const days = ['M', 'Tu', 'W', 'Th', 'F'];
